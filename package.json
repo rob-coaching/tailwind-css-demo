@@ -2,16 +2,15 @@
   "name": "tailwind",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "live-server src",
-    "css": "tailwindcss -i src/styles/input.css -o src/styles/output.css -w"
+    "start": "parcel src/index.html",
+    "build": "parcel build --no-source-maps --public-url ./ ./src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.17",
+    "parcel": "^2.11.0",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1"
   }
